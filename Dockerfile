@@ -12,7 +12,7 @@ RUN mvn clean package
 FROM openjdk:17-jdk-alpine
 
 # Exponer el puerto que utilizará la aplicación
-EXPOSE 8083
+# EXPOSE 8083
 
 # Copiar el archivo JAR construido desde la etapa anterior
 COPY --from=build /app/target/Carpooling-Usuario-0.0.1-SNAPSHOT.jar /app/Carpooling-Usuario-0.0.1-SNAPSHOT.jar

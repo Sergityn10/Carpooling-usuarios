@@ -25,6 +25,12 @@ public class Usuario {
         this.organizacion = organizacion;
     }
 
+    public Usuario(String nombre, String password, String email) {
+        this.nombre = nombre;
+        this.password = password;
+        this.email = email;
+    }
+
     public Usuario(String nombre, String password, String email, String organizacion) {
         this.nombre = nombre;
         this.password = password;
